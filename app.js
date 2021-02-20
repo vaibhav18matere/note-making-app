@@ -6,7 +6,7 @@ addBtn.addEventListener("click", function (e) {
     let addTxt = document.getElementById("addTxt")
     let notes = localStorage.getItem("notes");
     if (notes == null) {
-        notesObj = [];
+        notesObj = []; 
     } else {
         notesObj = JSON.parse(notes);
     }
@@ -50,8 +50,8 @@ function showNotes() {
     });
 }
 // function to delet note
-function dltNt(index) {
-    let notes = localStorage.getItem('notes');
+function deletNote(index) {
+    let notes = localStorage.getItem("notes");
     if (notes == null) {
         notesObj = [];
     } else {
@@ -62,7 +62,7 @@ function dltNt(index) {
     showNotes();
 }
 
-// search note
+// search notes from saved notes
 let search = document.getElementById('searchTxt');
 search.addEventListener("input", function(){
 

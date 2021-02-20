@@ -5,6 +5,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
      <title>Note-app</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -22,7 +23,7 @@
                  <span class="navbar-toggler-icon"></span>
              </button>
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <ul class="navbar-nav me-auto">
                      <li class="nav-item">
                          <a class="nav-link active" aria-current="page" href="#">Home</a>
                      </li>
@@ -30,16 +31,17 @@
                  </li>
 
                  </ul>
-                 <form class="d-flex">
-                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <form class="form d-flex">
+                     <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search"
+                         aria-label="Search">
                      <button class="btn btn-outline-success" type="submit">Search</button>
                  </form>
              </div>
          </div>
      </nav>
 
-     <div class="container my3">
-         <h1>Welcome to Note making app</h1>
+     <div class="container my3 text-center">
+         <h1>Welcome to Note making app !</h1>
          <div class="card" style="width: 18rem;">
              <!-- <img src="..." class="card-img-top" alt="..."> -->
              <div class="card-body">
@@ -55,14 +57,16 @@
      <h1>Your notes</h1>
      <hr>
      <div id="notes" class="row container-fluid">
-         <div class="card" style="width: 18rem;">
-             <div class="card-body">
-                 <h5 class="card-title">Note</h5>
-                 <p class="card-text"></p>
-                 <a href="#" class="btn btn-primary">Delet note</a>
-             </div>
-         </div>
+
      </div>
+
+     <!-- footer -->
+     <footer class="footer mt-auto py-3 bg-light">
+         <div class="container">
+             Sample Note making app by - Vaibhav Matere
+     </footer>
+
+     <!-- bootstrap javascript  -->
 
      <script src="app.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
