@@ -50,7 +50,8 @@ function showNotes() {
     });
 }
 // function to delet note
-function deletNote(index) {
+
+function dltNt(index) {
     let notes = localStorage.getItem("notes");
     if (notes == null) {
         notesObj = [];
