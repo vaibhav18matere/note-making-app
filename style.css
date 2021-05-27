@@ -1,8 +1,11 @@
-body{
-    background-color: rgb(201, 125, 33);
+.container{
+    padding-top: 15px;
 }
+
+.nav-title{color: blue;}
 
 .footer{
     padding-top: 2rem;
     margin-top: 2rem;
+    color: blue;
 }
